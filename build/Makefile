@@ -201,6 +201,54 @@ src/DetectorConstruction.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/geant4_example.dir/build.make CMakeFiles/geant4_example.dir/src/DetectorConstruction.cc.s
 .PHONY : src/DetectorConstruction.cc.s
 
+src/EventAction.o: src/EventAction.cc.o
+.PHONY : src/EventAction.o
+
+# target to build an object file
+src/EventAction.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/geant4_example.dir/build.make CMakeFiles/geant4_example.dir/src/EventAction.cc.o
+.PHONY : src/EventAction.cc.o
+
+src/EventAction.i: src/EventAction.cc.i
+.PHONY : src/EventAction.i
+
+# target to preprocess a source file
+src/EventAction.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/geant4_example.dir/build.make CMakeFiles/geant4_example.dir/src/EventAction.cc.i
+.PHONY : src/EventAction.cc.i
+
+src/EventAction.s: src/EventAction.cc.s
+.PHONY : src/EventAction.s
+
+# target to generate assembly for a file
+src/EventAction.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/geant4_example.dir/build.make CMakeFiles/geant4_example.dir/src/EventAction.cc.s
+.PHONY : src/EventAction.cc.s
+
+src/PhysicsList.o: src/PhysicsList.cc.o
+.PHONY : src/PhysicsList.o
+
+# target to build an object file
+src/PhysicsList.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/geant4_example.dir/build.make CMakeFiles/geant4_example.dir/src/PhysicsList.cc.o
+.PHONY : src/PhysicsList.cc.o
+
+src/PhysicsList.i: src/PhysicsList.cc.i
+.PHONY : src/PhysicsList.i
+
+# target to preprocess a source file
+src/PhysicsList.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/geant4_example.dir/build.make CMakeFiles/geant4_example.dir/src/PhysicsList.cc.i
+.PHONY : src/PhysicsList.cc.i
+
+src/PhysicsList.s: src/PhysicsList.cc.s
+.PHONY : src/PhysicsList.s
+
+# target to generate assembly for a file
+src/PhysicsList.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/geant4_example.dir/build.make CMakeFiles/geant4_example.dir/src/PhysicsList.cc.s
+.PHONY : src/PhysicsList.cc.s
+
 src/PrimaryGeneratorAction.o: src/PrimaryGeneratorAction.cc.o
 .PHONY : src/PrimaryGeneratorAction.o
 
@@ -225,6 +273,78 @@ src/PrimaryGeneratorAction.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/geant4_example.dir/build.make CMakeFiles/geant4_example.dir/src/PrimaryGeneratorAction.cc.s
 .PHONY : src/PrimaryGeneratorAction.cc.s
 
+src/ReactorHit.o: src/ReactorHit.cc.o
+.PHONY : src/ReactorHit.o
+
+# target to build an object file
+src/ReactorHit.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/geant4_example.dir/build.make CMakeFiles/geant4_example.dir/src/ReactorHit.cc.o
+.PHONY : src/ReactorHit.cc.o
+
+src/ReactorHit.i: src/ReactorHit.cc.i
+.PHONY : src/ReactorHit.i
+
+# target to preprocess a source file
+src/ReactorHit.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/geant4_example.dir/build.make CMakeFiles/geant4_example.dir/src/ReactorHit.cc.i
+.PHONY : src/ReactorHit.cc.i
+
+src/ReactorHit.s: src/ReactorHit.cc.s
+.PHONY : src/ReactorHit.s
+
+# target to generate assembly for a file
+src/ReactorHit.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/geant4_example.dir/build.make CMakeFiles/geant4_example.dir/src/ReactorHit.cc.s
+.PHONY : src/ReactorHit.cc.s
+
+src/ReactorSD.o: src/ReactorSD.cc.o
+.PHONY : src/ReactorSD.o
+
+# target to build an object file
+src/ReactorSD.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/geant4_example.dir/build.make CMakeFiles/geant4_example.dir/src/ReactorSD.cc.o
+.PHONY : src/ReactorSD.cc.o
+
+src/ReactorSD.i: src/ReactorSD.cc.i
+.PHONY : src/ReactorSD.i
+
+# target to preprocess a source file
+src/ReactorSD.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/geant4_example.dir/build.make CMakeFiles/geant4_example.dir/src/ReactorSD.cc.i
+.PHONY : src/ReactorSD.cc.i
+
+src/ReactorSD.s: src/ReactorSD.cc.s
+.PHONY : src/ReactorSD.s
+
+# target to generate assembly for a file
+src/ReactorSD.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/geant4_example.dir/build.make CMakeFiles/geant4_example.dir/src/ReactorSD.cc.s
+.PHONY : src/ReactorSD.cc.s
+
+src/RunAction.o: src/RunAction.cc.o
+.PHONY : src/RunAction.o
+
+# target to build an object file
+src/RunAction.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/geant4_example.dir/build.make CMakeFiles/geant4_example.dir/src/RunAction.cc.o
+.PHONY : src/RunAction.cc.o
+
+src/RunAction.i: src/RunAction.cc.i
+.PHONY : src/RunAction.i
+
+# target to preprocess a source file
+src/RunAction.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/geant4_example.dir/build.make CMakeFiles/geant4_example.dir/src/RunAction.cc.i
+.PHONY : src/RunAction.cc.i
+
+src/RunAction.s: src/RunAction.cc.s
+.PHONY : src/RunAction.s
+
+# target to generate assembly for a file
+src/RunAction.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/geant4_example.dir/build.make CMakeFiles/geant4_example.dir/src/RunAction.cc.s
+.PHONY : src/RunAction.cc.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -243,9 +363,24 @@ help:
 	@echo "... src/DetectorConstruction.o"
 	@echo "... src/DetectorConstruction.i"
 	@echo "... src/DetectorConstruction.s"
+	@echo "... src/EventAction.o"
+	@echo "... src/EventAction.i"
+	@echo "... src/EventAction.s"
+	@echo "... src/PhysicsList.o"
+	@echo "... src/PhysicsList.i"
+	@echo "... src/PhysicsList.s"
 	@echo "... src/PrimaryGeneratorAction.o"
 	@echo "... src/PrimaryGeneratorAction.i"
 	@echo "... src/PrimaryGeneratorAction.s"
+	@echo "... src/ReactorHit.o"
+	@echo "... src/ReactorHit.i"
+	@echo "... src/ReactorHit.s"
+	@echo "... src/ReactorSD.o"
+	@echo "... src/ReactorSD.i"
+	@echo "... src/ReactorSD.s"
+	@echo "... src/RunAction.o"
+	@echo "... src/RunAction.i"
+	@echo "... src/RunAction.s"
 .PHONY : help
 
 

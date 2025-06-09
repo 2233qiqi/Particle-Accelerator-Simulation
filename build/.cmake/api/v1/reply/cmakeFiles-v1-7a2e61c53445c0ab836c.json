@@ -1330,6 +1330,36 @@
 			"path" : "/usr/share/cmake-3.28/Modules/FindPackageMessage.cmake"
 		},
 		{
+			"isExternal" : true,
+			"path" : "/usr/local/cmake/ROOTConfig-version.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/usr/local/cmake/ROOTConfig.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/usr/local/cmake/RootMacros.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.28/Modules/CMakeParseArguments.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/usr/local/cmake/ROOTConfig-targets.cmake"
+		},
+		{
+			"isExternal" : true,
+			"path" : "/usr/local/cmake/ROOTConfig-targets-release.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "/usr/share/cmake-3.28/Modules/CMakeFindDependencyMacro.cmake"
+		},
+		{
 			"path" : "init_vis.mac"
 		},
 		{
