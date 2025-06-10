@@ -111,10 +111,24 @@ CMakeFiles/geant4_example.dir/src/DetectorConstruction.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/geant4_example.dir/src/DetectorConstruction.cc.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hushiqi/work_space/Geant4/geant4_example/src/DetectorConstruction.cc -o CMakeFiles/geant4_example.dir/src/DetectorConstruction.cc.s
 
+CMakeFiles/geant4_example.dir/src/EMField.cc.o: CMakeFiles/geant4_example.dir/flags.make
+CMakeFiles/geant4_example.dir/src/EMField.cc.o: /home/hushiqi/work_space/Geant4/geant4_example/src/EMField.cc
+CMakeFiles/geant4_example.dir/src/EMField.cc.o: CMakeFiles/geant4_example.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hushiqi/work_space/Geant4/geant4_example/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/geant4_example.dir/src/EMField.cc.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/geant4_example.dir/src/EMField.cc.o -MF CMakeFiles/geant4_example.dir/src/EMField.cc.o.d -o CMakeFiles/geant4_example.dir/src/EMField.cc.o -c /home/hushiqi/work_space/Geant4/geant4_example/src/EMField.cc
+
+CMakeFiles/geant4_example.dir/src/EMField.cc.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/geant4_example.dir/src/EMField.cc.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hushiqi/work_space/Geant4/geant4_example/src/EMField.cc > CMakeFiles/geant4_example.dir/src/EMField.cc.i
+
+CMakeFiles/geant4_example.dir/src/EMField.cc.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/geant4_example.dir/src/EMField.cc.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hushiqi/work_space/Geant4/geant4_example/src/EMField.cc -o CMakeFiles/geant4_example.dir/src/EMField.cc.s
+
 CMakeFiles/geant4_example.dir/src/EventAction.cc.o: CMakeFiles/geant4_example.dir/flags.make
 CMakeFiles/geant4_example.dir/src/EventAction.cc.o: /home/hushiqi/work_space/Geant4/geant4_example/src/EventAction.cc
 CMakeFiles/geant4_example.dir/src/EventAction.cc.o: CMakeFiles/geant4_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hushiqi/work_space/Geant4/geant4_example/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/geant4_example.dir/src/EventAction.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hushiqi/work_space/Geant4/geant4_example/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/geant4_example.dir/src/EventAction.cc.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/geant4_example.dir/src/EventAction.cc.o -MF CMakeFiles/geant4_example.dir/src/EventAction.cc.o.d -o CMakeFiles/geant4_example.dir/src/EventAction.cc.o -c /home/hushiqi/work_space/Geant4/geant4_example/src/EventAction.cc
 
 CMakeFiles/geant4_example.dir/src/EventAction.cc.i: cmake_force
@@ -128,7 +142,7 @@ CMakeFiles/geant4_example.dir/src/EventAction.cc.s: cmake_force
 CMakeFiles/geant4_example.dir/src/PhysicsList.cc.o: CMakeFiles/geant4_example.dir/flags.make
 CMakeFiles/geant4_example.dir/src/PhysicsList.cc.o: /home/hushiqi/work_space/Geant4/geant4_example/src/PhysicsList.cc
 CMakeFiles/geant4_example.dir/src/PhysicsList.cc.o: CMakeFiles/geant4_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hushiqi/work_space/Geant4/geant4_example/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/geant4_example.dir/src/PhysicsList.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hushiqi/work_space/Geant4/geant4_example/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/geant4_example.dir/src/PhysicsList.cc.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/geant4_example.dir/src/PhysicsList.cc.o -MF CMakeFiles/geant4_example.dir/src/PhysicsList.cc.o.d -o CMakeFiles/geant4_example.dir/src/PhysicsList.cc.o -c /home/hushiqi/work_space/Geant4/geant4_example/src/PhysicsList.cc
 
 CMakeFiles/geant4_example.dir/src/PhysicsList.cc.i: cmake_force
@@ -142,7 +156,7 @@ CMakeFiles/geant4_example.dir/src/PhysicsList.cc.s: cmake_force
 CMakeFiles/geant4_example.dir/src/PrimaryGeneratorAction.cc.o: CMakeFiles/geant4_example.dir/flags.make
 CMakeFiles/geant4_example.dir/src/PrimaryGeneratorAction.cc.o: /home/hushiqi/work_space/Geant4/geant4_example/src/PrimaryGeneratorAction.cc
 CMakeFiles/geant4_example.dir/src/PrimaryGeneratorAction.cc.o: CMakeFiles/geant4_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hushiqi/work_space/Geant4/geant4_example/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/geant4_example.dir/src/PrimaryGeneratorAction.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hushiqi/work_space/Geant4/geant4_example/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/geant4_example.dir/src/PrimaryGeneratorAction.cc.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/geant4_example.dir/src/PrimaryGeneratorAction.cc.o -MF CMakeFiles/geant4_example.dir/src/PrimaryGeneratorAction.cc.o.d -o CMakeFiles/geant4_example.dir/src/PrimaryGeneratorAction.cc.o -c /home/hushiqi/work_space/Geant4/geant4_example/src/PrimaryGeneratorAction.cc
 
 CMakeFiles/geant4_example.dir/src/PrimaryGeneratorAction.cc.i: cmake_force
@@ -156,7 +170,7 @@ CMakeFiles/geant4_example.dir/src/PrimaryGeneratorAction.cc.s: cmake_force
 CMakeFiles/geant4_example.dir/src/ReactorHit.cc.o: CMakeFiles/geant4_example.dir/flags.make
 CMakeFiles/geant4_example.dir/src/ReactorHit.cc.o: /home/hushiqi/work_space/Geant4/geant4_example/src/ReactorHit.cc
 CMakeFiles/geant4_example.dir/src/ReactorHit.cc.o: CMakeFiles/geant4_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hushiqi/work_space/Geant4/geant4_example/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/geant4_example.dir/src/ReactorHit.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hushiqi/work_space/Geant4/geant4_example/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/geant4_example.dir/src/ReactorHit.cc.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/geant4_example.dir/src/ReactorHit.cc.o -MF CMakeFiles/geant4_example.dir/src/ReactorHit.cc.o.d -o CMakeFiles/geant4_example.dir/src/ReactorHit.cc.o -c /home/hushiqi/work_space/Geant4/geant4_example/src/ReactorHit.cc
 
 CMakeFiles/geant4_example.dir/src/ReactorHit.cc.i: cmake_force
@@ -170,7 +184,7 @@ CMakeFiles/geant4_example.dir/src/ReactorHit.cc.s: cmake_force
 CMakeFiles/geant4_example.dir/src/ReactorSD.cc.o: CMakeFiles/geant4_example.dir/flags.make
 CMakeFiles/geant4_example.dir/src/ReactorSD.cc.o: /home/hushiqi/work_space/Geant4/geant4_example/src/ReactorSD.cc
 CMakeFiles/geant4_example.dir/src/ReactorSD.cc.o: CMakeFiles/geant4_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hushiqi/work_space/Geant4/geant4_example/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/geant4_example.dir/src/ReactorSD.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hushiqi/work_space/Geant4/geant4_example/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/geant4_example.dir/src/ReactorSD.cc.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/geant4_example.dir/src/ReactorSD.cc.o -MF CMakeFiles/geant4_example.dir/src/ReactorSD.cc.o.d -o CMakeFiles/geant4_example.dir/src/ReactorSD.cc.o -c /home/hushiqi/work_space/Geant4/geant4_example/src/ReactorSD.cc
 
 CMakeFiles/geant4_example.dir/src/ReactorSD.cc.i: cmake_force
@@ -184,7 +198,7 @@ CMakeFiles/geant4_example.dir/src/ReactorSD.cc.s: cmake_force
 CMakeFiles/geant4_example.dir/src/RunAction.cc.o: CMakeFiles/geant4_example.dir/flags.make
 CMakeFiles/geant4_example.dir/src/RunAction.cc.o: /home/hushiqi/work_space/Geant4/geant4_example/src/RunAction.cc
 CMakeFiles/geant4_example.dir/src/RunAction.cc.o: CMakeFiles/geant4_example.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hushiqi/work_space/Geant4/geant4_example/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/geant4_example.dir/src/RunAction.cc.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/hushiqi/work_space/Geant4/geant4_example/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/geant4_example.dir/src/RunAction.cc.o"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/geant4_example.dir/src/RunAction.cc.o -MF CMakeFiles/geant4_example.dir/src/RunAction.cc.o.d -o CMakeFiles/geant4_example.dir/src/RunAction.cc.o -c /home/hushiqi/work_space/Geant4/geant4_example/src/RunAction.cc
 
 CMakeFiles/geant4_example.dir/src/RunAction.cc.i: cmake_force
@@ -200,6 +214,7 @@ geant4_example_OBJECTS = \
 "CMakeFiles/geant4_example.dir/main.cc.o" \
 "CMakeFiles/geant4_example.dir/src/ActionInitialization.cc.o" \
 "CMakeFiles/geant4_example.dir/src/DetectorConstruction.cc.o" \
+"CMakeFiles/geant4_example.dir/src/EMField.cc.o" \
 "CMakeFiles/geant4_example.dir/src/EventAction.cc.o" \
 "CMakeFiles/geant4_example.dir/src/PhysicsList.cc.o" \
 "CMakeFiles/geant4_example.dir/src/PrimaryGeneratorAction.cc.o" \
@@ -213,6 +228,7 @@ geant4_example_EXTERNAL_OBJECTS =
 geant4_example: CMakeFiles/geant4_example.dir/main.cc.o
 geant4_example: CMakeFiles/geant4_example.dir/src/ActionInitialization.cc.o
 geant4_example: CMakeFiles/geant4_example.dir/src/DetectorConstruction.cc.o
+geant4_example: CMakeFiles/geant4_example.dir/src/EMField.cc.o
 geant4_example: CMakeFiles/geant4_example.dir/src/EventAction.cc.o
 geant4_example: CMakeFiles/geant4_example.dir/src/PhysicsList.cc.o
 geant4_example: CMakeFiles/geant4_example.dir/src/PrimaryGeneratorAction.cc.o
@@ -269,9 +285,16 @@ geant4_example: /usr/local/lib/libMathCore.so
 geant4_example: /usr/local/lib/libThread.so
 geant4_example: /usr/local/lib/libMultiProc.so
 geant4_example: /usr/local/lib/libROOTVecOps.so
+geant4_example: /usr/lib/x86_64-linux-gnu/libXm.so
+geant4_example: /usr/lib/x86_64-linux-gnu/libXmu.so
+geant4_example: /usr/lib/x86_64-linux-gnu/libXext.so
+geant4_example: /usr/lib/x86_64-linux-gnu/libXt.so
+geant4_example: /usr/lib/x86_64-linux-gnu/libICE.so
+geant4_example: /usr/lib/x86_64-linux-gnu/libSM.so
 geant4_example: /usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.13
 geant4_example: /usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.15.13
 geant4_example: /usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.13
+geant4_example: /usr/lib/x86_64-linux-gnu/libX11.so
 geant4_example: /usr/lib/x86_64-linux-gnu/libxerces-c.so
 geant4_example: /usr/local/lib/libG4analysis.so
 geant4_example: /usr/lib/x86_64-linux-gnu/libexpat.so
@@ -281,7 +304,7 @@ geant4_example: /usr/local/lib/libG4global.so
 geant4_example: /usr/local/lib/libG4clhep.so
 geant4_example: /usr/local/lib/libG4ptl.so.3.0.0
 geant4_example: CMakeFiles/geant4_example.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/hushiqi/work_space/Geant4/geant4_example/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Linking CXX executable geant4_example"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/hushiqi/work_space/Geant4/geant4_example/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable geant4_example"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/geant4_example.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -286,6 +286,12 @@ LZMA_INCLUDE_DIR:PATH=/usr/include
 //lzma library
 LZMA_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/liblzma.so
 
+//Path to a file.
+MOTIF_INCLUDE_DIR:PATH=/usr/include
+
+//Path to a library.
+MOTIF_LIBRARIES:FILEPATH=/usr/lib/x86_64-linux-gnu/libXm.so
+
 //Executable for running MPI programs.
 MPIEXEC_EXECUTABLE:FILEPATH=/usr/bin/mpiexec
 
@@ -1166,6 +1172,8 @@ FIND_PACKAGE_MESSAGE_DETAILS_LZMA:INTERNAL=[/usr/lib/x86_64-linux-gnu/liblzma.so
 FIND_PACKAGE_MESSAGE_DETAILS_MPI:INTERNAL=[TRUE][cfound components: C ][v3.1()]
 //Details about finding MPI_C
 FIND_PACKAGE_MESSAGE_DETAILS_MPI_C:INTERNAL=[/usr/lib/x86_64-linux-gnu/libmpi.so][mpi][/usr/lib/x86_64-linux-gnu/openmpi/include][TRUE][v3.1()]
+//Details about finding Motif
+FIND_PACKAGE_MESSAGE_DETAILS_Motif:INTERNAL=[/usr/lib/x86_64-linux-gnu/libXm.so][/usr/include][v()]
 //Details about finding OpenGL
 FIND_PACKAGE_MESSAGE_DETAILS_OpenGL:INTERNAL=[/usr/lib/x86_64-linux-gnu/libOpenGL.so][/usr/lib/x86_64-linux-gnu/libGLX.so][/usr/include][cfound components: OpenGL GLX ][v()]
 //Details about finding PNG
@@ -1214,6 +1222,10 @@ JsonCpp_LIBRARY-ADVANCED:INTERNAL=1
 LZ4_INCLUDE_DIR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: LZ4_LIBRARY
 LZ4_LIBRARY-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MOTIF_INCLUDE_DIR
+MOTIF_INCLUDE_DIR-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: MOTIF_LIBRARIES
+MOTIF_LIBRARIES-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MPIEXEC_EXECUTABLE
 MPIEXEC_EXECUTABLE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: MPIEXEC_MAX_NUMPROCS

@@ -201,6 +201,30 @@ src/DetectorConstruction.cc.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/geant4_example.dir/build.make CMakeFiles/geant4_example.dir/src/DetectorConstruction.cc.s
 .PHONY : src/DetectorConstruction.cc.s
 
+src/EMField.o: src/EMField.cc.o
+.PHONY : src/EMField.o
+
+# target to build an object file
+src/EMField.cc.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/geant4_example.dir/build.make CMakeFiles/geant4_example.dir/src/EMField.cc.o
+.PHONY : src/EMField.cc.o
+
+src/EMField.i: src/EMField.cc.i
+.PHONY : src/EMField.i
+
+# target to preprocess a source file
+src/EMField.cc.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/geant4_example.dir/build.make CMakeFiles/geant4_example.dir/src/EMField.cc.i
+.PHONY : src/EMField.cc.i
+
+src/EMField.s: src/EMField.cc.s
+.PHONY : src/EMField.s
+
+# target to generate assembly for a file
+src/EMField.cc.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/geant4_example.dir/build.make CMakeFiles/geant4_example.dir/src/EMField.cc.s
+.PHONY : src/EMField.cc.s
+
 src/EventAction.o: src/EventAction.cc.o
 .PHONY : src/EventAction.o
 
@@ -363,6 +387,9 @@ help:
 	@echo "... src/DetectorConstruction.o"
 	@echo "... src/DetectorConstruction.i"
 	@echo "... src/DetectorConstruction.s"
+	@echo "... src/EMField.o"
+	@echo "... src/EMField.i"
+	@echo "... src/EMField.s"
 	@echo "... src/EventAction.o"
 	@echo "... src/EventAction.i"
 	@echo "... src/EventAction.s"

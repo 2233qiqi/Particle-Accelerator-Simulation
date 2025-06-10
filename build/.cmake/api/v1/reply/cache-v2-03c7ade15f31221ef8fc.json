@@ -1470,6 +1470,18 @@
 			"value" : "[/usr/lib/x86_64-linux-gnu/libmpi.so][mpi][/usr/lib/x86_64-linux-gnu/openmpi/include][TRUE][v3.1()]"
 		},
 		{
+			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_Motif",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Details about finding Motif"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "[/usr/lib/x86_64-linux-gnu/libXm.so][/usr/include][v()]"
+		},
+		{
 			"name" : "FIND_PACKAGE_MESSAGE_DETAILS_OpenGL",
 			"properties" : 
 			[
@@ -1868,6 +1880,38 @@
 			],
 			"type" : "FILEPATH",
 			"value" : "/usr/lib/x86_64-linux-gnu/liblzma.so"
+		},
+		{
+			"name" : "MOTIF_INCLUDE_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a file."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/usr/include"
+		},
+		{
+			"name" : "MOTIF_LIBRARIES",
+			"properties" : 
+			[
+				{
+					"name" : "ADVANCED",
+					"value" : "1"
+				},
+				{
+					"name" : "HELPSTRING",
+					"value" : "Path to a library."
+				}
+			],
+			"type" : "FILEPATH",
+			"value" : "/usr/lib/x86_64-linux-gnu/libXm.so"
 		},
 		{
 			"name" : "MPIEXEC_EXECUTABLE",

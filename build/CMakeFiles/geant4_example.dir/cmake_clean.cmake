@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/geant4_example.dir/src/ActionInitialization.cc.o.d"
   "CMakeFiles/geant4_example.dir/src/DetectorConstruction.cc.o"
   "CMakeFiles/geant4_example.dir/src/DetectorConstruction.cc.o.d"
+  "CMakeFiles/geant4_example.dir/src/EMField.cc.o"
+  "CMakeFiles/geant4_example.dir/src/EMField.cc.o.d"
   "CMakeFiles/geant4_example.dir/src/EventAction.cc.o"
   "CMakeFiles/geant4_example.dir/src/EventAction.cc.o.d"
   "CMakeFiles/geant4_example.dir/src/PhysicsList.cc.o"
