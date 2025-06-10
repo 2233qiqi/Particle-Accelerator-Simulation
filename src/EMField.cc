@@ -24,11 +24,11 @@
 // ********************************************************************
 //
 // This example is provided by the Geant4-DNA collaboration
-// Any report or published results obtained using the Geant4-DNA software 
+// Any report or published results obtained using the Geant4-DNA software
 // shall cite the following Geant4-DNA collaboration publication:
 // Med. Phys. 37 (2010) 4692-4708
 // The Geant4-DNA web site is available at http://geant4-dna.org
-// 
+//
 // If you use this example, please cite the following publication:
 // Rad. Prot. Dos. 133 (2009) 2-11
 //
@@ -39,19 +39,19 @@
 #include "G4Exp.hh"
 #include "G4SystemOfUnits.hh"
 
-EMField::EMField() 
-{}
+EMField::EMField()
+{
+}
 
-void EMField::GetFieldValue(const double point[4], double *Bfield ) const
-{ 
+void EMField::GetFieldValue(const double point[4], double *Bfield) const
+{
   // Magnetic field
-  Bfield[0] = 5.36*1e-3 * tesla; // Example value, adjust as needed
+  Bfield[0] = 1.7 * 1e-2 * tesla; // Example value, adjust as needed
   Bfield[1] = 0;
   Bfield[2] = 0;
-  
+
   // Electric field
-  Bfield[3] = -2*1e2 * volt/meter;
+  Bfield[3] = -2 * 1e2 * volt / meter;
   Bfield[4] = 0; // Example value, adjust as needed
   Bfield[5] = 0;
-
 }

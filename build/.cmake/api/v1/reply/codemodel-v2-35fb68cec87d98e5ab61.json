@@ -6,10 +6,10 @@
 			[
 				{
 					"build" : ".",
-					"jsonFile" : "directory-.-Debug-f5ebdc15457944623624.json",
+					"jsonFile" : "directory-.-f5ebdc15457944623624.json",
 					"minimumCMakeVersion" : 
 					{
-						"string" : "2.8.12"
+						"string" : "3.8"
 					},
 					"projectIndex" : 0,
 					"source" : ".",
@@ -19,7 +19,7 @@
 					]
 				}
 			],
-			"name" : "Debug",
+			"name" : "",
 			"projects" : 
 			[
 				{
@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "geant4_example::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-geant4_example-Debug-e595b98a306a39026761.json",
+					"jsonFile" : "target-geant4_example-c200c37e54c7c58f39a0.json",
 					"name" : "geant4_example",
 					"projectIndex" : 0
 				}
@@ -49,12 +49,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/hushiqi/work_space/Geant4/geant4_example/build",
-		"source" : "/home/hushiqi/work_space/Geant4/geant4_example"
+		"build" : "/home/qiqi/Vs Code/Geant_Project/Study-master/Temple_Geant4/build",
+		"source" : "/home/qiqi/Vs Code/Geant_Project/Study-master/Temple_Geant4"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 6
+		"minor" : 7
 	}
 }

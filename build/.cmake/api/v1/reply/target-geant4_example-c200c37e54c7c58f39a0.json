@@ -20,8 +20,8 @@
 		"files" : 
 		[
 			"CMakeLists.txt",
-			"/usr/local/lib/cmake/Geant4/Geant4LibraryDepends.cmake",
-			"/usr/local/lib/cmake/Geant4/Geant4Config.cmake"
+			"/home/qiqi/Geant4/lib/cmake/Geant4/Geant4LibraryDepends.cmake",
+			"/home/qiqi/Geant4/lib/cmake/Geant4/Geant4Config.cmake"
 		],
 		"nodes" : 
 		[
@@ -69,12 +69,6 @@
 			{
 				"command" : 2,
 				"file" : 1,
-				"line" : 235,
-				"parent" : 6
-			},
-			{
-				"command" : 2,
-				"file" : 1,
 				"line" : 95,
 				"parent" : 6
 			},
@@ -98,9 +92,6 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g"
-				},
-				{
 					"backtrace" : 2,
 					"fragment" : "-fPIC"
 				}
@@ -117,31 +108,11 @@
 				},
 				{
 					"backtrace" : 2,
-					"define" : "G4UI_USE_XM"
-				},
-				{
-					"backtrace" : 2,
-					"define" : "G4VIS_USE_OI"
-				},
-				{
-					"backtrace" : 2,
-					"define" : "G4VIS_USE_OIQT"
-				},
-				{
-					"backtrace" : 2,
 					"define" : "G4VIS_USE_OPENGLQT"
 				},
 				{
 					"backtrace" : 2,
 					"define" : "G4VIS_USE_OPENGLX"
-				},
-				{
-					"backtrace" : 2,
-					"define" : "G4VIS_USE_OPENGLXM"
-				},
-				{
-					"backtrace" : 2,
-					"define" : "G4VIS_USE_RAYTRACERX"
 				},
 				{
 					"backtrace" : 2,
@@ -161,22 +132,6 @@
 				},
 				{
 					"backtrace" : 2,
-					"define" : "G4VIS_USE_TOOLSSG_XT_GLES"
-				},
-				{
-					"backtrace" : 2,
-					"define" : "G4VIS_USE_TOOLSSG_XT_ZB"
-				},
-				{
-					"backtrace" : 2,
-					"define" : "G4VIS_USE_VTK"
-				},
-				{
-					"backtrace" : 2,
-					"define" : "G4VIS_USE_VTK_QT"
-				},
-				{
-					"backtrace" : 2,
 					"define" : "PTL_BUILD_DLL"
 				},
 				{
@@ -189,19 +144,23 @@
 				},
 				{
 					"backtrace" : 2,
+					"define" : "QT_NO_DEBUG"
+				},
+				{
+					"backtrace" : 2,
 					"define" : "QT_WIDGETS_LIB"
 				}
 			],
 			"includes" : 
 			[
 				{
-					"backtrace" : 11,
-					"path" : "/home/hushiqi/work_space/Geant4/geant4_example/include"
+					"backtrace" : 10,
+					"path" : "/home/qiqi/Vs Code/Geant_Project/Study-master/Temple_Geant4/include"
 				},
 				{
 					"backtrace" : 2,
 					"isSystem" : true,
-					"path" : "/usr/local/include/Geant4"
+					"path" : "/home/qiqi/Geant4/include/Geant4"
 				},
 				{
 					"backtrace" : 2,
@@ -251,350 +210,291 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "-g",
-				"role" : "flags"
-			},
-			{
 				"fragment" : "",
 				"role" : "flags"
 			},
 			{
-				"fragment" : "-Wl,-rpath,/usr/local/lib",
+				"fragment" : "-Wl,-rpath,/home/qiqi/Geant4/lib:/home/qiqi/Root/root_v6.34.08.Linux-ubuntu24.04-x86_64-gcc13.3/root/lib",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/usr/local/lib/libG4Tree.so",
+				"fragment" : "/home/qiqi/Geant4/lib/libG4Tree.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/usr/local/lib/libG4FR.so",
+				"fragment" : "/home/qiqi/Geant4/lib/libG4FR.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/usr/local/lib/libG4GMocren.so",
+				"fragment" : "/home/qiqi/Geant4/lib/libG4GMocren.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/usr/local/lib/libG4visHepRep.so",
+				"fragment" : "/home/qiqi/Geant4/lib/libG4visHepRep.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/usr/local/lib/libG4RayTracer.so",
+				"fragment" : "/home/qiqi/Geant4/lib/libG4RayTracer.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/usr/local/lib/libG4VRML.so",
+				"fragment" : "/home/qiqi/Geant4/lib/libG4VRML.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/usr/local/lib/libG4ToolsSG.so",
+				"fragment" : "/home/qiqi/Geant4/lib/libG4ToolsSG.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/usr/local/lib/libG4OpenGL.so",
+				"fragment" : "/home/qiqi/Geant4/lib/libG4OpenGL.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/usr/local/lib/libG4OpenInventor.so",
+				"fragment" : "/home/qiqi/Geant4/lib/libG4vis_management.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/usr/local/lib/libG4visVtk.so",
+				"fragment" : "/home/qiqi/Geant4/lib/libG4modeling.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/usr/local/lib/libG4vis_management.so",
+				"fragment" : "/home/qiqi/Geant4/lib/libG4interfaces.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/usr/local/lib/libG4modeling.so",
+				"fragment" : "/home/qiqi/Geant4/lib/libG4mctruth.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/usr/local/lib/libG4interfaces.so",
+				"fragment" : "/home/qiqi/Geant4/lib/libG4geomtext.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/usr/local/lib/libG4mctruth.so",
+				"fragment" : "/home/qiqi/Geant4/lib/libG4error_propagation.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/usr/local/lib/libG4geomtext.so",
+				"fragment" : "/home/qiqi/Geant4/lib/libG4readout.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/usr/local/lib/libG4gdml.so",
+				"fragment" : "/home/qiqi/Geant4/lib/libG4physicslists.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/usr/local/lib/libG4error_propagation.so",
+				"fragment" : "/home/qiqi/Geant4/lib/libG4run.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/usr/local/lib/libG4readout.so",
+				"fragment" : "/home/qiqi/Geant4/lib/libG4event.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/usr/local/lib/libG4physicslists.so",
+				"fragment" : "/home/qiqi/Geant4/lib/libG4tracking.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/usr/local/lib/libG4run.so",
+				"fragment" : "/home/qiqi/Geant4/lib/libG4parmodels.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/usr/local/lib/libG4event.so",
+				"fragment" : "/home/qiqi/Geant4/lib/libG4processes.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/usr/local/lib/libG4tracking.so",
+				"fragment" : "/home/qiqi/Geant4/lib/libG4digits_hits.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/usr/local/lib/libG4parmodels.so",
+				"fragment" : "/home/qiqi/Geant4/lib/libG4track.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/usr/local/lib/libG4processes.so",
+				"fragment" : "/home/qiqi/Geant4/lib/libG4particles.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/usr/local/lib/libG4digits_hits.so",
+				"fragment" : "/home/qiqi/Geant4/lib/libG4geometry.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/usr/local/lib/libG4track.so",
+				"fragment" : "/home/qiqi/Geant4/lib/libG4materials.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/usr/local/lib/libG4particles.so",
+				"fragment" : "/home/qiqi/Geant4/lib/libG4graphics_reps.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/usr/local/lib/libG4geometry.so",
+				"fragment" : "/home/qiqi/Root/root_v6.34.08.Linux-ubuntu24.04-x86_64-gcc13.3/root/lib/libCore.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/usr/local/lib/libG4materials.so",
+				"fragment" : "/home/qiqi/Root/root_v6.34.08.Linux-ubuntu24.04-x86_64-gcc13.3/root/lib/libImt.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/usr/local/lib/libG4graphics_reps.so",
+				"fragment" : "/home/qiqi/Root/root_v6.34.08.Linux-ubuntu24.04-x86_64-gcc13.3/root/lib/libRIO.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/usr/local/lib/libCore.so",
+				"fragment" : "/home/qiqi/Root/root_v6.34.08.Linux-ubuntu24.04-x86_64-gcc13.3/root/lib/libNet.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/usr/local/lib/libImt.so",
+				"fragment" : "/home/qiqi/Root/root_v6.34.08.Linux-ubuntu24.04-x86_64-gcc13.3/root/lib/libHist.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/usr/local/lib/libRIO.so",
+				"fragment" : "/home/qiqi/Root/root_v6.34.08.Linux-ubuntu24.04-x86_64-gcc13.3/root/lib/libGraf.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/usr/local/lib/libNet.so",
+				"fragment" : "/home/qiqi/Root/root_v6.34.08.Linux-ubuntu24.04-x86_64-gcc13.3/root/lib/libGraf3d.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/usr/local/lib/libHist.so",
+				"fragment" : "/home/qiqi/Root/root_v6.34.08.Linux-ubuntu24.04-x86_64-gcc13.3/root/lib/libGpad.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/usr/local/lib/libGraf.so",
+				"fragment" : "/home/qiqi/Root/root_v6.34.08.Linux-ubuntu24.04-x86_64-gcc13.3/root/lib/libROOTDataFrame.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/usr/local/lib/libGraf3d.so",
+				"fragment" : "/home/qiqi/Root/root_v6.34.08.Linux-ubuntu24.04-x86_64-gcc13.3/root/lib/libTree.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/usr/local/lib/libGpad.so",
+				"fragment" : "/home/qiqi/Root/root_v6.34.08.Linux-ubuntu24.04-x86_64-gcc13.3/root/lib/libTreePlayer.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/usr/local/lib/libROOTDataFrame.so",
+				"fragment" : "/home/qiqi/Root/root_v6.34.08.Linux-ubuntu24.04-x86_64-gcc13.3/root/lib/libRint.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/usr/local/lib/libTree.so",
+				"fragment" : "/home/qiqi/Root/root_v6.34.08.Linux-ubuntu24.04-x86_64-gcc13.3/root/lib/libPostscript.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/usr/local/lib/libTreePlayer.so",
+				"fragment" : "/home/qiqi/Root/root_v6.34.08.Linux-ubuntu24.04-x86_64-gcc13.3/root/lib/libMatrix.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/usr/local/lib/libRint.so",
+				"fragment" : "/home/qiqi/Root/root_v6.34.08.Linux-ubuntu24.04-x86_64-gcc13.3/root/lib/libPhysics.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/usr/local/lib/libPostscript.so",
+				"fragment" : "/home/qiqi/Root/root_v6.34.08.Linux-ubuntu24.04-x86_64-gcc13.3/root/lib/libMathCore.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/usr/local/lib/libMatrix.so",
+				"fragment" : "/home/qiqi/Root/root_v6.34.08.Linux-ubuntu24.04-x86_64-gcc13.3/root/lib/libThread.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/usr/local/lib/libPhysics.so",
+				"fragment" : "/home/qiqi/Root/root_v6.34.08.Linux-ubuntu24.04-x86_64-gcc13.3/root/lib/libMultiProc.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/usr/local/lib/libMathCore.so",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 2,
-				"fragment" : "/usr/local/lib/libThread.so",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 2,
-				"fragment" : "/usr/local/lib/libMultiProc.so",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 2,
-				"fragment" : "/usr/local/lib/libROOTVecOps.so",
+				"fragment" : "/home/qiqi/Root/root_v6.34.08.Linux-ubuntu24.04-x86_64-gcc13.3/root/lib/libROOTVecOps.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 7,
-				"fragment" : "/usr/lib/x86_64-linux-gnu/libXm.so",
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.15",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 7,
-				"fragment" : "/usr/lib/x86_64-linux-gnu/libXmu.so",
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.15.15",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 7,
-				"fragment" : "/usr/lib/x86_64-linux-gnu/libXext.so",
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.15",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 7,
-				"fragment" : "/usr/lib/x86_64-linux-gnu/libXt.so",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 7,
-				"fragment" : "/usr/lib/x86_64-linux-gnu/libICE.so",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 7,
-				"fragment" : "/usr/lib/x86_64-linux-gnu/libSM.so",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 7,
-				"fragment" : "/usr/lib/x86_64-linux-gnu/libQt5Widgets.so.5.15.13",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 7,
-				"fragment" : "/usr/lib/x86_64-linux-gnu/libQt5Gui.so.5.15.13",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 7,
-				"fragment" : "/usr/lib/x86_64-linux-gnu/libQt5Core.so.5.15.13",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 7,
-				"fragment" : "/usr/lib/x86_64-linux-gnu/libX11.so",
+				"backtrace" : 2,
+				"fragment" : "/home/qiqi/Geant4/lib/libG4analysis.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 8,
-				"fragment" : "/usr/lib/x86_64-linux-gnu/libxerces-c.so",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 2,
-				"fragment" : "/usr/local/lib/libG4analysis.so",
-				"role" : "libraries"
-			},
-			{
-				"backtrace" : 9,
 				"fragment" : "/usr/lib/x86_64-linux-gnu/libexpat.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/usr/local/lib/libG4zlib.so",
+				"fragment" : "/home/qiqi/Geant4/lib/libG4zlib.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/usr/local/lib/libG4intercoms.so",
+				"fragment" : "/home/qiqi/Geant4/lib/libG4intercoms.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/usr/local/lib/libG4global.so",
+				"fragment" : "/home/qiqi/Geant4/lib/libG4global.so",
 				"role" : "libraries"
 			},
 			{
 				"backtrace" : 2,
-				"fragment" : "/usr/local/lib/libG4clhep.so",
+				"fragment" : "/home/qiqi/Geant4/lib/libG4clhep.so",
 				"role" : "libraries"
 			},
 			{
-				"backtrace" : 10,
-				"fragment" : "/usr/local/lib/libG4ptl.so.3.0.0",
+				"backtrace" : 9,
+				"fragment" : "/home/qiqi/Geant4/lib/libG4ptl.so.3.0.0",
 				"role" : "libraries"
 			}
 		],
