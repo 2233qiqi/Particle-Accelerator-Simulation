@@ -11,20 +11,19 @@
 #include "G4VisAttributes.hh"
 #include "G4Colour.hh"
 #include "G4RotationMatrix.hh"
-
+#include "G4FieldManager.hh"
+#include "EMField.hh" // 引入自定义磁场类
 class DetectorConstruction : public G4VUserDetectorConstruction
 {
-private:
-    /* data */
 public:
-    DetectorConstruction (/* args */);
-    ~DetectorConstruction() override = default;
-    G4VPhysicalVolume* Construct() override;
+    DetectorConstruction();
+    ~DetectorConstruction() override ;
+    G4VPhysicalVolume *Construct() override;
+    void ConstructSDandField() override;
+
+private:
+    std::vector<G4LogicalVolume *> fLogicChamber;
+    G4LogicalVolume *fFieldLogicalVolume; 
 };
-
-
-
-
-
 
 #endif

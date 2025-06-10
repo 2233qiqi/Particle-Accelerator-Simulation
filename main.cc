@@ -1,6 +1,3 @@
-// #include "DetectorConstruction.hh"
-// #include "PhysicsList.hh"
-// #include "ActionInitialization01.hh"
 #include "G4RunManagerFactory.hh"
 #include "G4UImanager.hh"
 #include "G4UIExecutive.hh"
@@ -9,6 +6,9 @@
 #include "DetectorConstruction.hh"
 #include "QBBC.hh"
 #include "ActionInitialization.hh"
+#include "G4TScoreNtupleWriter.hh"
+#include "G4AnalysisManager.hh"
+#include "PhysicsList.hh"
 
 int main(int argc, char **argv)
 {
@@ -21,11 +21,16 @@ int main(int argc, char **argv)
 
     G4int precision = 4;
     G4SteppingVerbose::UseBestUnit(precision);
+    // 初始化计分器写入器（必须在主线程）
+    G4TScoreNtupleWriter<G4AnalysisManager> scoreNtupleWriter;
+    scoreNtupleWriter.SetVerboseLevel(1);
+    scoreNtupleWriter.SetNtupleMerging(true); // 启用多线程合并（仅ROOT支持）
     // construct the default run manager
     auto runManager = G4RunManagerFactory::CreateRunManager(G4RunManagerType::Default);
     // set mandatory initialization classes
     runManager->SetUserInitialization(new DetectorConstruction);
-    auto physicsList = new QBBC;
+    //auto physicsList = new PhysicsList;
+    auto physicsList = new QBBC; // Use QBBC physics list
     physicsList->SetVerboseLevel(1);
     runManager->SetUserInitialization(physicsList);
     runManager->SetUserInitialization(new ActionInitialization);
@@ -36,7 +41,7 @@ int main(int argc, char **argv)
     //  Constructors can also take optional arguments:
     //  - a graphics system of choice, eg. "OGL"
     //  - and a verbosity argument - see /vis/verbose guidance.
-    auto visManager = new G4VisExecutive(argc, argv, "OGLIQt", "Quiet");
+    auto visManager = new G4VisExecutive(argc, argv, "VTKQt", "Quiet");
     // auto visManager = new G4VisExecutive("Quiet");
     visManager->Initialize();
 

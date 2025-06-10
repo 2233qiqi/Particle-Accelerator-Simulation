@@ -68,6 +68,20 @@
         "cfenv": "cpp",
         "cinttypes": "cpp",
         "typeinfo": "cpp",
-        "variant": "cpp"
+        "variant": "cpp",
+        "*.icc": "cpp",
+        "axis": "cpp",
+        "img": "cpp",
+        "qrot": "cpp",
+        "vec2": "cpp",
+        "vec3": "cpp",
+        "vec4": "cpp",
+        "bmf": "cpp",
+        "bsf": "cpp",
+        "mesh": "cpp",
+        "visible_action": "cpp",
+        "csetjmp": "cpp",
+        "buffer": "cpp",
+        "netfwd": "cpp"
     }
 }
