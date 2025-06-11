@@ -3,7 +3,7 @@
 PrimaryGeneratorAction::PrimaryGeneratorAction()
 {
   // Create a particle gun with one particle
-  fParticleGun = new G4ParticleGun(1);
+  fParticleGun = new G4ParticleGun(10000);
 
   // Set the particle type to electron
   auto particleTable = G4ParticleTable::GetParticleTable();

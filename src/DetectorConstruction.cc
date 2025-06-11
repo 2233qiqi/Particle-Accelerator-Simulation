@@ -95,9 +95,9 @@ G4VPhysicalVolume *DetectorConstruction::Construct()
     G4cout << *(G4Material::GetMaterialTable()) << G4endl;
 
     fFieldLogicalVolume = fLogicChamber;
-    //G4VisAttributes *fieldVis = new G4VisAttributes(G4Colour(1.0, 1.0, 1.0, 0.5));
-    //fieldVis->SetForceSolid(true); // 强制实体渲染（可选）
-    //fFieldLogicalVolume->SetVisAttributes(fieldVis);
+    // G4VisAttributes *fieldVis = new G4VisAttributes(G4Colour(1.0, 1.0, 1.0, 0.5));
+    // fieldVis->SetForceSolid(true); // 强制实体渲染（可选）
+    // fFieldLogicalVolume->SetVisAttributes(fieldVis);
     return world_phys;
 }
 
@@ -116,7 +116,7 @@ void DetectorConstruction::ConstructSDandField()
     G4EqMagElectricField *fEquation = new G4EqMagElectricField(field);
     G4MagIntegratorStepper *fStepper = new G4ClassicalRK4(fEquation, 8);
     G4FieldManager *fFieldMgr =
-        //G4TransportationManager::GetTransportationManager()->GetFieldManager();
+        // G4TransportationManager::GetTransportationManager()->GetFieldManager();
         new G4FieldManager();
 
     // Relaxed
