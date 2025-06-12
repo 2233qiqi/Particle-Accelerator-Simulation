@@ -15,13 +15,10 @@
 #include "G4eMultipleScattering.hh"
 #include "G4eplusAnnihilation.hh"
 
-
 PhysicsList::PhysicsList()
 {
   defaultCutValue = 1.0 * mm;
 }
-
-
 
 void PhysicsList::ConstructParticle()
 {
@@ -32,29 +29,32 @@ void PhysicsList::ConstructParticle()
   G4EmBuilder::ConstructMinimalEmSet();
 }
 
-
 void PhysicsList::ConstructProcess()
 {
   AddTransportation();
-  G4PhysicsListHelper* ph = G4PhysicsListHelper::GetPhysicsListHelper();
+  G4PhysicsListHelper *ph = G4PhysicsListHelper::GetPhysicsListHelper();
 
   auto particleIterator = GetParticleIterator();
   particleIterator->reset();
-  while ((*particleIterator)()) {
-    G4ParticleDefinition* particle = particleIterator->value();
+  while ((*particleIterator)())
+  {
+    G4ParticleDefinition *particle = particleIterator->value();
     G4String particleName = particle->GetParticleName();
 
-    if (particleName == "gamma") {
+    if (particleName == "gamma")
+    {
       ph->RegisterProcess(new G4PhotoElectricEffect, particle);
       ph->RegisterProcess(new G4ComptonScattering, particle);
       ph->RegisterProcess(new G4GammaConversion, particle);
     }
-    else if (particleName == "e-") {
+    else if (particleName == "e-")
+    {
       ph->RegisterProcess(new G4eMultipleScattering, particle);
       ph->RegisterProcess(new G4eIonisation, particle);
       ph->RegisterProcess(new G4eBremsstrahlung, particle);
     }
-    else if (particleName == "e+") {
+    else if (particleName == "e+")
+    {
       ph->RegisterProcess(new G4eMultipleScattering, particle);
       ph->RegisterProcess(new G4eIonisation, particle);
       ph->RegisterProcess(new G4eBremsstrahlung, particle);
@@ -62,4 +62,3 @@ void PhysicsList::ConstructProcess()
     }
   }
 }
-
