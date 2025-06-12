@@ -45,7 +45,7 @@ G4VPhysicalVolume *DetectorConstruction::Construct()
 
     // 二氧化碳
     // pv=nRT
-    G4double T = 200 * kelvin;                     // 温度
+    G4double T = 300 * kelvin;                     // 温度
     G4double P = 0.01 * pascal;                    // 压力
     G4double CO2_density = 1.76 * 1e-10 * g / cm3; // 二氧化碳密度
     // std::cout << "CO2_density:" << CO2_density << std::endl; // 二氧化碳密度
