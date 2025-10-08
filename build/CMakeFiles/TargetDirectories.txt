@@ -1,3 +1,3 @@
-/home/qiqi/Vs Code/Geant_Project/Study-master/Temple_Geant4/build/CMakeFiles/geant4_example.dir
-/home/qiqi/Vs Code/Geant_Project/Study-master/Temple_Geant4/build/CMakeFiles/edit_cache.dir
-/home/qiqi/Vs Code/Geant_Project/Study-master/Temple_Geant4/build/CMakeFiles/rebuild_cache.dir
+/home/qiqi/geant4/Particle-Accelerator-Simulation/build/CMakeFiles/geant4_example.dir
+/home/qiqi/geant4/Particle-Accelerator-Simulation/build/CMakeFiles/edit_cache.dir
+/home/qiqi/geant4/Particle-Accelerator-Simulation/build/CMakeFiles/rebuild_cache.dir
