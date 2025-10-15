@@ -4,8 +4,7 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/**",
-                "/home/qiqi/Geant4/**",
-                "/home/qiqi/Geant4/include/Geant4/**"
+                "/usr/local/include/Geant4"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",
