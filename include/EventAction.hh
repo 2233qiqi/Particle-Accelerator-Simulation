@@ -11,6 +11,7 @@ class EventAction : public G4UserEventAction
 public:
   EventAction(const RunAction *run);
   ~EventAction() override = default;
+  G4int eventid =0;
 
   void BeginOfEventAction(const G4Event *) override;
   void EndOfEventAction(const G4Event *) override;

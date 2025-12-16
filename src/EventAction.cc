@@ -10,13 +10,16 @@
 
 EventAction::EventAction(const RunAction *run) {}
 
-void EventAction::BeginOfEventAction(const G4Event *) {}
+void EventAction::BeginOfEventAction(const G4Event *) 
+{
+
+}
 
 void EventAction::EndOfEventAction(const G4Event *event)
 {
   // get number of stored trajectories
 
-  /*G4TrajectoryContainer *trajectoryContainer = event->GetTrajectoryContainer();
+  G4TrajectoryContainer *trajectoryContainer = event->GetTrajectoryContainer();
   std::size_t n_trajectories = 0;
   if (trajectoryContainer)
     n_trajectories = trajectoryContainer->entries();
@@ -56,5 +59,5 @@ void EventAction::EndOfEventAction(const G4Event *event)
       analysisManager->AddNtupleRow();
     }
   }
-  std::cout << "EventAction: EndOfEventAction called for event " << eventID << std::endl;*/
+  std::cout << "EventAction: EndOfEventAction called for event " << eventID << std::endl;
 }
