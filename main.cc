@@ -9,6 +9,7 @@
 #include "G4TScoreNtupleWriter.hh"
 #include "G4AnalysisManager.hh"
 #include "PhysicsList.hh"
+#include "CADMesh.hh"
 
 int main(int argc, char **argv)
 {
