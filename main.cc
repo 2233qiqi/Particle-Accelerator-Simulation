@@ -42,7 +42,7 @@ int main(int argc, char **argv)
     //  Constructors can also take optional arguments:
     //  - a graphics system of choice, eg. "OGL"
     //  - and a verbosity argument - see /vis/verbose guidance.
-    auto visManager = new G4VisExecutive(argc, argv, "VTKQt", "Quiet");
+    auto visManager = new G4VisExecutive(argc, argv, "OGLIQt", "Quiet");
     // auto visManager = new G4VisExecutive("Quiet");
     visManager->Initialize();
 

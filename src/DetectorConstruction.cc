@@ -3,6 +3,7 @@
 #include "G4NistManager.hh"
 #include "G4Material.hh"
 
+#include "G4Box.hh"
 #include "G4LogicalVolume.hh"
 #include "G4PVPlacement.hh"
 
@@ -11,66 +12,111 @@
 
 #include "CADMesh.hh"
 
+#include <cmath>
+
+// --------------------------------------------------------------------
+
 DetectorConstruction::DetectorConstruction()
 : G4VUserDetectorConstruction()
+{}
+
+DetectorConstruction::~DetectorConstruction() {}
+
+
+G4VPhysicalVolume* DetectorConstruction::Construct()
 {
-}
-DetectorConstruction::~DetectorConstruction()
-{
-}
+    auto nist = G4NistManager::Instance();
 
-G4VPhysicalVolume *DetectorConstruction::Construct()
-{
-auto nist = G4NistManager::Instance();
+    auto vacuum   = nist->FindOrBuildMaterial("G4_Galactic");
+    auto fuelMat = nist->FindOrBuildMaterial("G4_UO2"); 
 
-auto vacuum = nist->FindOrBuildMaterial("G4_Galactic");
-auto aluminum = nist->FindOrBuildMaterial("G4_AL");
-auto iron = nist->FindOrBuildMaterial("G4_Fe");
+    G4double worldSize = 10 * m;
 
+    auto solidWorld = new G4Box(
+        "World",
+        0.5 * worldSize,
+        0.5 * worldSize,
+        0.5 * worldSize
+    );
 
-G4double WorldSize = 10 * m;
+    auto logicWorld =
+        new G4LogicalVolume(solidWorld, vacuum, "World");
 
-auto SolidWorld =new G4Box("World", WorldSize, WorldSize, WorldSize);
-auto LogicalWorld =new G4LogicalVolume(SolidWorld,vacuum,"World");
-auto PhysicalWorld =new G4PVPlacement(NULL,{},LogicalWorld,"World",NULL,false,0);
+    auto physWorld =
+        new G4PVPlacement(nullptr, {}, logicWorld,
+                          "World", nullptr, false, 0, true);
 
-auto mesh =CADMesh::TessellatedMesh::FromOBJ("Model.obj");
-mesh->SetScale(1000.0);
-G4String meshName[] = {
-    "Vacuum_Tube",
-    "RF_Cavity",
-    "Focusing_Magnet_1",
-    "Focusing_Magnet_2"
-};
-G4Material *materials[]={
-    aluminum,
-    aluminum,
-    iron,
-    iron
-};
+    auto mesh = CADMesh::TessellatedMesh::FromOBJ("model.obj");
+    mesh->SetScale(2000.0);  
 
-    for (G4int i = 0; i < 4; i++) {
-
-        auto solid = mesh->GetSolid(meshName[i]);
-
-        auto logic =
-            new G4LogicalVolume(solid,
-                                materials[i],
-                                meshName[i]);
-
-        new G4PVPlacement(
-            nullptr,
-            G4ThreeVector(),
-            logic,
-            meshName[i],
-            LogicalWorld,
-            false,
-            i,
-            true
-        );
+    auto solidRod = mesh->GetSolid("FuelRod_2_2");
+    if (!solidRod) {
+        G4Exception("DetectorConstruction",
+                    "MeshNotFound",
+                    FatalException,
+                    "Missing mesh: FuelRod_2_2");
     }
 
+    auto logicRod =
+        new G4LogicalVolume(solidRod, fuelMat, "FuelRod_2_2");
 
+    const G4int nx = 6;
+    const G4int ny = 6;
 
-return PhysicalWorld;
+    G4double pitch  = 20.0 * mm;     
+    G4double height = 2000.0 * mm;   
+
+    auto solidLattice = new G4Box(
+        "Lattice",
+        0.5 * nx * pitch,
+        0.5 * ny * pitch,
+        0.5 * height
+    );
+
+    auto logicLattice =
+        new G4LogicalVolume(solidLattice, vacuum, "Lattice");
+
+    new G4PVPlacement(
+        nullptr,
+        {},
+        logicLattice,
+        "Lattice",
+        logicWorld,
+        false,
+        0,
+        true
+    );
+
+    const G4double sqrt3 = std::sqrt(3.0);
+
+    G4double x0 = 0.5 * (nx - 1) * pitch;
+    G4double y0 = 0.5 * (ny - 1) * pitch * sqrt3 * 0.5;
+
+    G4int copyNo = 0;
+
+    for (G4int iy = 0; iy < ny; ++iy) {
+        for (G4int ix = 0; ix < nx; ++ix) {
+
+            G4double x =
+                (ix + 0.5 * (iy % 2)) * pitch - x0;
+
+            G4double y =
+                iy * pitch * sqrt3 * 0.5 - y0;
+
+            new G4PVPlacement(
+                nullptr,
+                G4ThreeVector(x, y, 0),
+                logicRod,
+                "FuelRod",
+                logicLattice,
+                false,
+                copyNo,
+                true
+            );
+
+            ++copyNo;
+        }
+    }
+
+    return physWorld;
 }
